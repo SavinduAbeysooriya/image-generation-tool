@@ -16,7 +16,7 @@ CORS(app)  # Enable CORS for all routes
 print(f"Running on Python {sys.version}")
 
 # Use environment variable for token (secure practice); fallback to hardcoded value for testing
-HF_TOKEN = os.getenv("HF_TOKEN", "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")
+HF_TOKEN = os.getenv("HF_TOKEN", "hf_##############################")
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"  # Fallback to a widely accessible model
 headers = {
     "Authorization": f"Bearer {HF_TOKEN}",
